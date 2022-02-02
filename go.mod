@@ -6,6 +6,8 @@ require (
 	github.com/99designs/gqlgen v0.16.0
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
 	github.com/vektah/gqlparser/v2 v2.3.1
+	go.sancus.dev/core v0.16.0
+	gopkg.in/yaml.v2 v2.2.4
 )
 
 require (
@@ -21,5 +23,4 @@ require (
 	golang.org/x/sys v0.0.0-20210510120138-977fb7262007 // indirect
 	golang.org/x/tools v0.1.5 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
-	gopkg.in/yaml.v2 v2.2.4 // indirect
 )
