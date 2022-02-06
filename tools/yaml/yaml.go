@@ -5,12 +5,18 @@ import (
 	"os"
 
 	valid "github.com/asaskevich/govalidator"
+	"github.com/creasty/defaults"
 	"gopkg.in/yaml.v2"
 
 	"go.sancus.dev/core/errors"
 )
 
 func LoadReader(f io.Reader, mapping func(string) string, c interface{}) error {
+	if err := defaults.Set(c); err != nil {
+		// failed to set defaults
+		return errors.Wrap(err, "SetDefaults")
+	}
+
 	b, err := io.ReadAll(f)
 	if err != nil {
 		// read error

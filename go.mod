@@ -5,6 +5,7 @@ go 1.17
 require (
 	github.com/99designs/gqlgen v0.16.0
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
+	github.com/creasty/defaults v1.5.2
 	github.com/vektah/gqlparser/v2 v2.3.1
 	go.sancus.dev/core v0.16.0
 	gopkg.in/yaml.v2 v2.2.4
